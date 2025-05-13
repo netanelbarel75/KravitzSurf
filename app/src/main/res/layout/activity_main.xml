@@ -17,7 +17,7 @@
             android:id="@+id/welcomeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome!"
+            android:text="@string/welcome"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -26,7 +26,7 @@
             android:id="@+id/nextClassTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No upcoming classes"
+            android:text="@string/no_upcoming_classes"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:layout_marginTop="8dp" />
@@ -61,12 +61,13 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_schedule"
-                    app:tint="@color/primary" />
+                    app:tint="@color/primary"
+                    android:contentDescription="@string/class_schedule" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Class Schedule"
+                    android:text="@string/class_schedule"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:layout_marginTop="8dp" />
@@ -95,12 +96,13 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_weather"
-                    app:tint="@color/primary" />
+                    app:tint="@color/primary"
+                    android:contentDescription="@string/weather" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Weather"
+                    android:text="@string/weather"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:layout_marginTop="8dp" />
@@ -129,12 +131,13 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:src="@drawable/ic_person"
-                    app:tint="@color/primary" />
+                    app:tint="@color/primary"
+                    android:contentDescription="@string/profile" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Profile"
+                    android:text="@string/profile"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:layout_marginTop="8dp" />
@@ -151,7 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
-        android:text="Logout"
+        android:text="@string/logout"
         android:textAllCaps="false"
         android:backgroundTint="@color/secondary" />
 

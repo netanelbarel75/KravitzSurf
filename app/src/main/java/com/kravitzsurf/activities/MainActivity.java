@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         String name = dataSnapshot.getValue(String.class);
-                        welcomeTextView.setText("Welcome, " + name + "!");
+                        welcomeTextView.setText(getString(R.string.welcome_user, name));
                     }
                     
                     @Override

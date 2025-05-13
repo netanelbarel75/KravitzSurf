@@ -47,14 +47,14 @@ public class ClassAdapter extends RecyclerView.Adapter<ClassAdapter.ClassViewHol
         SurfClass surfClass = classList.get(position);
         
         holder.titleTextView.setText(surfClass.getTitle());
-        holder.instructorTextView.setText("Instructor: " + surfClass.getInstructor());
+        holder.instructorTextView.setText(context.getString(R.string.instructor_format, surfClass.getInstructor()));
         
         SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, HH:mm", Locale.getDefault());
         String dateStr = sdf.format(new Date(surfClass.getDateTime()));
         holder.dateTimeTextView.setText(dateStr);
         
-        holder.durationTextView.setText(surfClass.getDuration() + " min");
-        holder.priceTextView.setText("$" + surfClass.getPrice());
+        holder.durationTextView.setText(context.getString(R.string.duration_format, surfClass.getDuration()));
+        holder.priceTextView.setText(context.getString(R.string.price_format, surfClass.getPrice()));
         
         holder.itemView.setOnClickListener(v -> listener.onClassClick(surfClass));
         holder.enrollButton.setOnClickListener(v -> listener.onEnrollClick(surfClass));

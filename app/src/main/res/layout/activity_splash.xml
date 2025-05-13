@@ -9,7 +9,8 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:id="@+id/appNameTextView"
@@ -18,7 +19,7 @@
         android:layout_below="@id/logoImageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="KravitzSurf"
+        android:text="@string/splash_title"
         android:textColor="@android:color/white"
         android:textSize="32sp"
         android:textStyle="bold" />
@@ -29,7 +30,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="Ride the Waves"
+        android:text="@string/app_slogan"
         android:textColor="@android:color/white"
         android:textSize="16sp" />
 

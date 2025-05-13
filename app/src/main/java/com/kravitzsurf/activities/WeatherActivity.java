@@ -18,6 +18,8 @@ import com.kravitzsurf.R;
 import com.kravitzsurf.models.WeatherData;
 import com.kravitzsurf.services.WeatherApiService;
 
+import java.util.Locale;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -126,16 +128,16 @@ public class WeatherActivity extends AppCompatActivity {
     }
     
     private void updateUI(WeatherData weatherData) {
-        temperatureTextView.setText(String.format("%.1f°C", weatherData.getMain().getTemp()));
+        temperatureTextView.setText(String.format(Locale.getDefault(), getString(R.string.temperature_format), weatherData.getMain().getTemp()));
         weatherDescTextView.setText(weatherData.getWeather().get(0).getDescription());
-        windSpeedTextView.setText(String.format("Wind: %.1f m/s", weatherData.getWind().getSpeed()));
-        humidityTextView.setText(String.format("Humidity: %d%%", weatherData.getMain().getHumidity()));
+        windSpeedTextView.setText(String.format(Locale.getDefault(), getString(R.string.wind_speed_format), weatherData.getWind().getSpeed()));
+        humidityTextView.setText(String.format(Locale.getDefault(), getString(R.string.humidity_format), weatherData.getMain().getHumidity()));
         locationTextView.setText(weatherData.getName());
         
         // Calculate approximate wave height based on wind speed
         double windSpeed = weatherData.getWind().getSpeed();
         double estimatedWaveHeight = calculateWaveHeight(windSpeed);
-        waveHeightTextView.setText(String.format("Wave Height: %.1f m", estimatedWaveHeight));
+        waveHeightTextView.setText(String.format(Locale.getDefault(), getString(R.string.wave_height_format), estimatedWaveHeight));
     }
     
     private double calculateWaveHeight(double windSpeed) {

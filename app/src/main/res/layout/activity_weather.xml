@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Location"
+            android:text="@string/location_label"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
@@ -40,7 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="--°C"
+                    android:text="@string/temperature_placeholder"
                     android:textSize="48sp"
                     android:textStyle="bold"
                     android:textColor="@color/primary" />
@@ -50,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="--"
+                    android:text="@string/weather_description_placeholder"
                     android:textSize="18sp"
                     android:layout_marginTop="8dp" />
 
@@ -69,7 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:baselineAligned="false">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -80,14 +81,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind Speed"
+                        android:text="@string/wind_speed"
                         android:textColor="@color/text_secondary" />
 
                     <TextView
                         android:id="@+id/windSpeedTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="-- m/s"
+                        android:text="@string/wind_speed_placeholder"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -102,14 +103,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Humidity"
+                        android:text="@string/humidity"
                         android:textColor="@color/text_secondary" />
 
                     <TextView
                         android:id="@+id/humidityTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="--%"
+                        android:text="@string/humidity_placeholder"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -135,7 +136,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Estimated Wave Height"
+                    android:text="@string/estimated_wave_height"
                     android:textColor="@android:color/white"
                     android:textSize="16sp" />
 
@@ -143,7 +144,7 @@
                     android:id="@+id/waveHeightTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="-- m"
+                    android:text="@string/wave_height_placeholder"
                     android:textColor="@android:color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
