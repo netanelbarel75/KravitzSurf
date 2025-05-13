@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   This file specifies backup rules for Android 11 and lower (API 30-).
+   See https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!-- Exclude specific files or folders -->
+    <exclude domain="cache" />
+    <exclude domain="file" path="cache/" />
+    
+    <!-- Include specific shared preferences if needed -->
+    <include domain="sharedpref" path="KravitzSurfPrefs.xml" />
+    
+    <!-- Include databases -->
+    <include domain="database" />
+    
+    <!-- Include app data files -->
+    <include domain="file" />
+    
+    <!-- Exclude any files that contain sensitive information -->
+    <exclude domain="file" path="secrets/" />
+</full-backup-content>

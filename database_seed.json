@@ -1,0 +1,244 @@
+{
+  "users": {
+    "Ugx3u7vVwnOUZHVh7fJ2Wi2pvfO2": {
+      "age": 28,
+      "email": "netanelbarel75@gmail.com",
+      "gender": "Male",
+      "name": "nati barel",
+      "enrolledClasses": {
+        "class_001": true,
+        "class_005": true
+      }
+    }
+  },
+  "classes": {
+    "class_001": {
+      "title": "Beginner's First Wave",
+      "description": "Perfect introduction to surfing. Learn basic techniques, ocean safety, and catch your first waves with experienced instructors.",
+      "instructor": "Mike Johnson",
+      "dateTime": 1736668800000,
+      "duration": 90,
+      "capacity": 8,
+      "price": 50.0,
+      "type": "group",
+      "location": "North Beach"
+    },
+    "class_002": {
+      "title": "Intermediate Wave Riders",
+      "description": "Take your surfing to the next level. Focus on improving technique, wave selection, and building confidence in bigger conditions.",
+      "instructor": "Sarah Martinez",
+      "dateTime": 1736755200000,
+      "duration": 120,
+      "capacity": 6,
+      "price": 65.0,
+      "type": "group",
+      "location": "Main Point"
+    },
+    "class_003": {
+      "title": "Early Morning Session",
+      "description": "Catch the best waves at dawn. Perfect for early risers who want to start their day with amazing surf.",
+      "instructor": "Jake Wilson",
+      "dateTime": 1736841600000,
+      "duration": 90,
+      "capacity": 10,
+      "price": 55.0,
+      "type": "group",
+      "location": "South Beach"
+    },
+    "class_004": {
+      "title": "Sunset Surf Experience",
+      "description": "End your day with a magical sunset session. Great lighting and usually calmer conditions.",
+      "instructor": "Emma Chen",
+      "dateTime": 1736870400000,
+      "duration": 90,
+      "capacity": 8,
+      "price": 60.0,
+      "type": "group",
+      "location": "West Bay"
+    },
+    "class_005": {
+      "title": "Advanced Performance",
+      "description": "For experienced surfers looking to master advanced maneuvers, competitive techniques, and big wave surfing.",
+      "instructor": "Carlos Rodriguez",
+      "dateTime": 1736928000000,
+      "duration": 120,
+      "capacity": 4,
+      "price": 85.0,
+      "type": "group",
+      "location": "Pipeline Point"
+    },
+    "class_006": {
+      "title": "Teen Surf Camp",
+      "description": "Special program for teenagers. Learn surfing while making friends and having fun in a safe environment.",
+      "instructor": "Lisa Thompson",
+      "dateTime": 1737014400000,
+      "duration": 180,
+      "capacity": 12,
+      "price": 75.0,
+      "type": "group",
+      "location": "Youth Beach"
+    },
+    "class_007": {
+      "title": "Private Beginner Lesson",
+      "description": "One-on-one instruction perfect for beginners who want personalized attention and faster progression.",
+      "instructor": "Mike Johnson",
+      "dateTime": 1736672400000,
+      "duration": 60,
+      "capacity": 1,
+      "price": 120.0,
+      "type": "private",
+      "location": "North Beach"
+    },
+    "class_008": {
+      "title": "Private Intermediate Coaching",
+      "description": "Personalized coaching session focused on your specific goals and technique improvement.",
+      "instructor": "Sarah Martinez",
+      "dateTime": 1736758800000,
+      "duration": 90,
+      "capacity": 1,
+      "price": 150.0,
+      "type": "private",
+      "location": "Main Point"
+    },
+    "class_009": {
+      "title": "Elite Private Training",
+      "description": "High-performance training for competitive surfers or those seeking rapid improvement.",
+      "instructor": "Carlos Rodriguez",
+      "dateTime": 1736845200000,
+      "duration": 120,
+      "capacity": 1,
+      "price": 200.0,
+      "type": "private",
+      "location": "Pipeline Point"
+    },
+    "class_010": {
+      "title": "Private Family Session",
+      "description": "Exclusive session for your family group (up to 4 people). Learn together at your own pace.",
+      "instructor": "Emma Chen",
+      "dateTime": 1736931600000,
+      "duration": 90,
+      "capacity": 4,
+      "price": 300.0,
+      "type": "private",
+      "location": "Family Cove"
+    },
+    "class_011": {
+      "title": "VIP Surf Experience",
+      "description": "Premium private lesson with video analysis, professional photography, and equipment included.",
+      "instructor": "Jake Wilson",
+      "dateTime": 1737018000000,
+      "duration": 150,
+      "capacity": 2,
+      "price": 350.0,
+      "type": "private",
+      "location": "VIP Beach"
+    },
+    "class_012": {
+      "title": "Little Groms (Ages 5-8)",
+      "description": "Fun introduction to surfing for young children. Parents participate to ensure safety and bonding.",
+      "instructor": "Lisa Thompson",
+      "dateTime": 1736676000000,
+      "duration": 60,
+      "capacity": 6,
+      "price": 80.0,
+      "type": "parent_child",
+      "location": "Kids Beach"
+    },
+    "class_013": {
+      "title": "Family Wave Adventure",
+      "description": "Parents and children (ages 8-14) learn together. Build confidence and create lasting memories.",
+      "instructor": "Mike Johnson",
+      "dateTime": 1736762400000,
+      "duration": 90,
+      "capacity": 8,
+      "price": 90.0,
+      "type": "parent_child",
+      "location": "Family Beach"
+    },
+    "class_014": {
+      "title": "Tiny Surfers (Ages 3-5)",
+      "description": "Super gentle introduction to the ocean. Parents in the water at all times with their little ones.",
+      "instructor": "Emma Chen",
+      "dateTime": 1736848800000,
+      "duration": 45,
+      "capacity": 4,
+      "price": 70.0,
+      "type": "parent_child",
+      "location": "Shallow Bay"
+    },
+    "class_015": {
+      "title": "Teen & Parent Bonding",
+      "description": "Special session for parents with teenagers. Learn together while respecting individual pace.",
+      "instructor": "Sarah Martinez",
+      "dateTime": 1736935200000,
+      "duration": 120,
+      "capacity": 6,
+      "price": 100.0,
+      "type": "parent_child",
+      "location": "Bond Beach"
+    },
+    "class_016": {
+      "title": "Grandparent Special",
+      "description": "Gentle session designed for grandparents and grandchildren. Focus on fun and safety.",
+      "instructor": "Jake Wilson",
+      "dateTime": 1737021600000,
+      "duration": 60,
+      "capacity": 4,
+      "price": 85.0,
+      "type": "parent_child",
+      "location": "Gentle Waves"
+    },
+    "class_017": {
+      "title": "Weekend Warrior Group",
+      "description": "Perfect for busy professionals. Intensive weekend session to maximize your time on the water.",
+      "instructor": "Carlos Rodriguez",
+      "dateTime": 1737108000000,
+      "duration": 180,
+      "capacity": 8,
+      "price": 95.0,
+      "type": "group",
+      "location": "Weekend Beach"
+    },
+    "class_018": {
+      "title": "Ladies Only Session",
+      "description": "Supportive environment for women to learn surfing together. All levels welcome.",
+      "instructor": "Sarah Martinez",
+      "dateTime": 1737194400000,
+      "duration": 90,
+      "capacity": 8,
+      "price": 60.0,
+      "type": "group",
+      "location": "Ladies Point"
+    },
+    "class_019": {
+      "title": "Adaptive Surf Program",
+      "description": "Specialized instruction for surfers with disabilities. Trained instructors and adaptive equipment available.",
+      "instructor": "Lisa Thompson",
+      "dateTime": 1737280800000,
+      "duration": 90,
+      "capacity": 4,
+      "price": 40.0,
+      "type": "group",
+      "location": "Accessible Beach"
+    },
+    "class_020": {
+      "title": "Competition Prep Private",
+      "description": "Intensive private coaching for upcoming competitions. Strategy, technique, and mental preparation.",
+      "instructor": "Carlos Rodriguez",
+      "dateTime": 1737367200000,
+      "duration": 120,
+      "capacity": 1,
+      "price": 250.0,
+      "type": "private",
+      "location": "Competition Zone"
+    }
+  },
+  "enrollments": {
+    "class_001": {
+      "Ugx3u7vVwnOUZHVh7fJ2Wi2pvfO2": true
+    },
+    "class_005": {
+      "Ugx3u7vVwnOUZHVh7fJ2Wi2pvfO2": true
+    }
+  }
+}

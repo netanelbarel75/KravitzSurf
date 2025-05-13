@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- Wave background -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M0,60 Q30,30 60,60 T120,60 L120,120 L0,120 Z" />
+    
+    <!-- Surfboard -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M60,20 C55,20 50,35 50,55 C50,75 55,90 60,90 C65,90 70,75 70,55 C70,35 65,20 60,20 Z" />
+    
+    <!-- Surfboard detail -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M60,30 C58,30 56,40 56,55 C56,70 58,80 60,80 C62,80 64,70 64,55 C64,40 62,30 60,30 Z" />
+    
+    <!-- Sun (converted from circle to path) -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M90,30 m-15,0 a15,15 0 1,1 30,0 a15,15 0 1,1 -30,0" />
+</vector>
