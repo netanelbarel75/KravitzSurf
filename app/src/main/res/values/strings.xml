@@ -55,4 +55,15 @@
     <string name="humidity_placeholder">--%</string>
     <string name="wind_speed_placeholder">-- m/s</string>
     <string name="weather_description_placeholder">--</string>
+    <string name="user_information">User Information</string>
+    <string name="name_label">Name:</string>
+    <string name="email_label">Email:</string>
+    <string name="age_label">Age:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="enrolled_classes_label">Enrolled Classes</string>
+    <string name="no_enrolled_classes">No enrolled classes</string>
+    <string name="enrolled_classes_count">Enrolled Classes (%d)</string>
+    <string name="failed_to_load_profile">Failed to load profile</string>
+    <string name="failed_to_load_enrolled_classes">Failed to load enrolled classes</string>
+    <string name="class_type">Class Type</string>
 </resources>

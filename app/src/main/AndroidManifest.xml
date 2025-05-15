@@ -55,6 +55,10 @@
         <activity
             android:name=".activities.ClassDetailsActivity"
             android:exported="false" />
+            
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false" />
         
         <receiver
             android:name=".receivers.AlarmReceiver"

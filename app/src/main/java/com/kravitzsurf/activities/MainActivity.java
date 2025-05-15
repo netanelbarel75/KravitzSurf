@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         });
         
         profileCard.setOnClickListener(v -> {
-            // Implement profile activity
+            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         });
         
         logoutButton.setOnClickListener(v -> {
@@ -128,7 +128,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         
-        if (id == R.id.action_logout) {
+        if (id == R.id.action_profile) {
+            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+            return true;
+        } else if (id == R.id.action_logout) {
             mAuth.signOut();
             preferenceManager.clearAll();
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
