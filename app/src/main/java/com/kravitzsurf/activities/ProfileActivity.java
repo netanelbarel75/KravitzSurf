@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,7 @@ public class ProfileActivity extends AppCompatActivity implements EnrolledClassA
     private TextView enrolledClassesLabel;
     private RecyclerView enrolledClassesRecyclerView;
     private ProgressBar progressBar;
+    private Button logoutButton;
     
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
@@ -52,6 +54,15 @@ public class ProfileActivity extends AppCompatActivity implements EnrolledClassA
         }
         
         mAuth = FirebaseAuth.getInstance();
+        
+        // Check if user is logged in
+        if (mAuth.getCurrentUser() == null) {
+            // User not logged in, go back to login
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+            return;
+        }
+        
         mDatabase = FirebaseDatabase.getInstance().getReference();
         preferenceManager = new PreferenceManager(this);
         
@@ -68,16 +79,25 @@ public class ProfileActivity extends AppCompatActivity implements EnrolledClassA
         enrolledClassesLabel = findViewById(R.id.enrolledClassesLabel);
         enrolledClassesRecyclerView = findViewById(R.id.enrolledClassesRecyclerView);
         progressBar = findViewById(R.id.progressBar);
+        logoutButton = findViewById(R.id.logoutButton);
         
         enrolledClasses = new ArrayList<>();
         enrolledClassAdapter = new EnrolledClassAdapter(this, enrolledClasses, this);
         
         enrolledClassesRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         enrolledClassesRecyclerView.setAdapter(enrolledClassAdapter);
+        
+        logoutButton.setOnClickListener(v -> logout());
     }
     
     private void loadUserProfile() {
         progressBar.setVisibility(View.VISIBLE);
+        
+        if (mAuth.getCurrentUser() == null) {
+            progressBar.setVisibility(View.GONE);
+            return;
+        }
+        
         String userId = mAuth.getCurrentUser().getUid();
         
         mDatabase.child("users").child(userId)
@@ -108,6 +128,10 @@ public class ProfileActivity extends AppCompatActivity implements EnrolledClassA
     }
     
     private void loadEnrolledClasses() {
+        if (mAuth.getCurrentUser() == null) {
+            return;
+        }
+        
         String userId = mAuth.getCurrentUser().getUid();
         
         mDatabase.child("users").child(userId).child("enrolledClasses")

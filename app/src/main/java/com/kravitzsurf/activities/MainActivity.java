@@ -3,10 +3,12 @@ package com.kravitzsurf.activities;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -27,6 +29,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     
+    private static final String TAG = "MainActivity";
     private CardView scheduleCard, weatherCard, profileCard;
     private TextView welcomeTextView, nextClassTextView;
     private Button logoutButton;
@@ -89,11 +92,11 @@ public class MainActivity extends AppCompatActivity {
                         
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
-                            nextClassTextView.setText("No upcoming classes");
+                        nextClassTextView.setText(R.string.no_upcoming_classes);
                         }
                     });
         } else {
-            nextClassTextView.setText("No upcoming classes scheduled");
+            nextClassTextView.setText(R.string.no_upcoming_classes);
         }
     }
     
@@ -107,6 +110,8 @@ public class MainActivity extends AppCompatActivity {
         });
         
         profileCard.setOnClickListener(v -> {
+            Log.d(TAG, "Profile card clicked");
+            Toast.makeText(MainActivity.this, "Opening profile...", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         });
         
