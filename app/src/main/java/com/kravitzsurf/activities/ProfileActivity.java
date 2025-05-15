@@ -104,11 +104,11 @@ public class ProfileActivity extends AppCompatActivity implements EnrolledClassA
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
+                        progressBar.setVisibility(View.GONE);
                         User user = dataSnapshot.getValue(User.class);
                         if (user != null) {
                             updateUserInfo(user);
                         }
-                        progressBar.setVisibility(View.GONE);
                     }
                     
                     @Override

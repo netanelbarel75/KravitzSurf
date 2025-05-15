@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private CardView scheduleCard, weatherCard, profileCard;
     private TextView welcomeTextView, nextClassTextView;
-    private Button logoutButton;
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
     private PreferenceManager preferenceManager;
@@ -51,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         profileCard = findViewById(R.id.profileCard);
         welcomeTextView = findViewById(R.id.welcomeTextView);
         nextClassTextView = findViewById(R.id.nextClassTextView);
-        logoutButton = findViewById(R.id.logoutButton);
         
         loadUserName();
         loadNextClass();
@@ -113,13 +110,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, "Profile card clicked");
             Toast.makeText(MainActivity.this, "Opening profile...", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(MainActivity.this, ProfileActivity.class));
-        });
-        
-        logoutButton.setOnClickListener(v -> {
-            mAuth.signOut();
-            preferenceManager.clearAll();
-            startActivity(new Intent(MainActivity.this, LoginActivity.class));
-            finish();
         });
     }
     
